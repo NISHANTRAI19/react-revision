@@ -20,8 +20,8 @@ why are there 2 links?
 
 we use React.createElement to create an element in react
 
-it takes three params; tag, object, content inside tag
- React.createElement("H1",{},"abc");
+it takes three params; tag, object(props / used to give attributes), content inside tag
+ React.createElement("H1",{},"abc"); //returns a JS object
 
  to render h1 we have to change the dom for it we will use 
  ReactDOM
@@ -32,7 +32,7 @@ it takes three params; tag, object, content inside tag
 
  createRoot allows to create a root to display React components inside a browser DOM node.
 
- Call root.render to display a piece of JSX (“React node”) into the React root’s browser DOM node.
+ Call root.render to display a piece of JSX (“React node”) into the React root’s browser DOM node.//converts object to html
 
  root.render returns undefined.
 
@@ -42,3 +42,18 @@ root.unmount();Call root.unmount to destroy a rendered tree inside a React root.
 manipulating DOM is very expensive for browser
 
 React's philosophy: to manipulate DOM using js
+
+
+----------------------------------------------------------------------------------------
+const nested = React.createElement("div", { id: "nested-parent" }, [
+        React.createElement("div", { id: "nested-child1" }, [
+          React.createElement("h1", { id: "1" }, "H1111111111"),
+          React.createElement("h1", { id: "2" }, "H22222222222"),
+        ]),
+        React.createElement("div", { id: "nested-child2" }, [
+          React.createElement("h1", { id: "1" }, "H1111111111"),
+          React.createElement("h1", { id: "2" }, "H22222222222"),
+        ]),
+      ]);
+
+this is very messy so we use JSX instead of creating reactelement everytime
