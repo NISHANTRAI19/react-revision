@@ -1,0 +1,44 @@
+What is react cdn?
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+CDN is a content delivery network
+
+and react is hoisted in CDN
+
+Both React and ReactDOM are available over a CDN.
+
+
+why are there 2 links?
+
+1 Link is react.development.js core of react
+2 Link is react dom, needed to modify DOM
+
+
+
+we use React.createElement to create an element in react
+
+it takes three params; tag, object, content inside tag
+ React.createElement("H1",{},"abc");
+
+ to render h1 we have to change the dom for it we will use 
+ ReactDOM
+
+ const root = ReactDOM.createRoot(document.getElementById("reactroot"));
+      root.render(heading);
+      everything from react will be rendered in root
+
+ createRoot allows to create a root to display React components inside a browser DOM node.
+
+ Call root.render to display a piece of JSX (“React node”) into the React root’s browser DOM node.
+
+ root.render returns undefined.
+
+root.unmount();Call root.unmount to destroy a rendered tree inside a React root.
+
+
+manipulating DOM is very expensive for browser
+
+React's philosophy: to manipulate DOM using js
