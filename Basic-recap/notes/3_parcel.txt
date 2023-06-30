@@ -1,0 +1,18 @@
+parcel creates a dev build 
+hosts on a local server
+HMR - hot module replacement
+file watching algorithm -written in C++
+caching for faster builds
+image optimization
+minification
+bundling
+compress
+consistent hashing
+code slitting
+differential bundling-support older browsers
+diagnostic
+error handling
+https
+tree shaking - remove unused code
+different dev and prod bundles(npx parcel build {entry point})
+

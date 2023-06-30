@@ -1,0 +1,46 @@
+NPM: a standard repository for packages, all packages are hoisted in it.
+npm init
+
+The npm init command is a step-by-step tool to scaffold out your project. 
+It will prompt you for input for a few aspects of the project 
+in the following order:
+
+The project's name,
+The project's initial version,
+The project's description,
+The project's entry point (meaning the project's main file),
+The project's test command (to trigger testing with something like Standard)
+The project's git repository (where the project source can be found)
+The project's keywords (basically, tags related to the project)
+The project's license (this defaults to ISC - most open-source Node.js projects are MIT)
+
+npm install and manages packages 
+project is dependent on packages and those packages are dependecies 
+package.json is configuration for npm
+
+Bundler bundles app properly, compresses, minifies, caches, cleanes.
+-webpack, parcel, vite
+create-react-app uses webpack and babel
+
+2 types of dependencies
+normal used in produciton also
+dev- used in development
+
+npm parcel-d installs it as a dev dependency
+
+
+every dependecy has its own dependency hence own package.json to maintain its configuration
+
+node modules is a collection/(sort of database) of all the depency 
+
+npx parcel {entrypoint} to start the app
+
+npx- executing package
+
+
+not recommended to use cdn to bring react because won't change to new react version+
+CDN is a costly opertion. it makes a network call instead we can store react in node modules.
+
+
+To use ES6 modules, you have to load the script using type="module" - 
+this ensures that browsers that do not understand ES6 modules won't choke on it
