@@ -1,0 +1,70 @@
+What is NPM?
+
+NPM helps in managing packages required for our projects.
+it is the default package manager for node modules.
+it is a global registry for node packages.
+and also contains a cli which allows users to interact with it.
+------------------------------------------------------------
+what is a bundler?
+A bundler is a development tool which bundles all the required files to run the project
+into 1 single production ready file or in a bundle
+------------------------------------------------------------------
+what is parcel?
+
+Parcel.js is an open source Bundler
+-----------------------------------------------------------------------
+why is the requirement of parcel/bundler?
+
+bundlers automatically tracks all the files, configurations, dev dependencies,
+minifies compresses bundles our project in short make our project production ready
+---------------------------------------------------------------------------
+what is npx?
+
+npx executes the npm packages
+------------------------------------------------
+
+difference betweendependencies and dev dependencies
+
+dev dependencies are required during development phase whereas dependencies
+are plugins and packages essential to run our projects
+
+--------------------------------------------------
+Tree shaking by parcel
+
+it statistically analyzes import and exports of each module, and removes everything which is not being used
+------------------------------------------------------------------
+what is hot module replacement?
+
+exchange of modules in a running application without a full reload
+---------------------------------------------------------------------
+what is .gitignore?
+
+we store the file names which should be ignore by git i.e shouldn't be pushed.
+the dependecies which are included within package.json shouldn't be uploaded
+as they can be reinstalled usingg npm init {called scaffolding the [project i.e installing the scaffolding or packages]}
+-----------------------------------------------------------------------------
+
+difference between package.json and package-lock.json
+
+package.json is generic but package-lock.json is very specific file
+ 
+package-lock.json will install the exact version of the dependecies used in the project thus we should not modify it
+---------------------------------------------------------------------------------------
+
+what is 'node_modules'?
+
+it contains all the dependecies required in the project. acts as a db to the packages
+shouldn't be pushed on git as they are very expensive and can be replicated using package.json
+-----------------------------------------------------------------------------------------------
+
+what is 'dist' folder?
+
+dist folder contains minified version of the source code
+----------------------------------------------------------------------------
+difference between carot^ and tilde~ in package.json
+
+~ is used to install even the minor versions which are used to fix bugs
+^ is used to install major verisons only
+
+might be wrong about this need clarification shall check later
+-------------------------------------------------------------------------------
