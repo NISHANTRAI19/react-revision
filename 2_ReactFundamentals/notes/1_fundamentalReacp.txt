@@ -38,3 +38,10 @@ functional component is a function that returns jsx code
 
 
 component composition is a component inside a component
+
+jsx sanitizes the data thus protecting it from cross side malicious scripting
+jsx can have single top level element(parent) { just like a tree has only 1 root}
+
+react fragments -> <React.Fragment></React.Fragment> will become one parent of the root it behaves 
+like an empty tags
+<></> react fragment by jsx
