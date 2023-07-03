@@ -1,0 +1,30 @@
+DOM elements- HTML tags
+similarly we have react elements(object)
+
+eg of react element
+const heading=React.createElement("h1",{id:"heading},"Namaste React");
+
+React.createElement creates a React element which is this object, when we render this object it becomes html object
+
+const root=ReactDOM.createRoot(document.getElementbyId("root"));
+root.render(heading);
+
+--------------------------------------------
+very clumsy way to write html inside js
+
+thus we can write react code without jsx
+JSX is different react is different
+
+
+jsx is not html inside JSX
+jsx is html like syntax
+const jsxHeading=<h1>heeellooooo</h1> returnss object
+this is not pure js and won't be run by Es6 engine
+
+but parcel(babel) transpiles(converts into a form which is understood by ES engine) the code before it reaches the ES engine
+
+JSX is converted to react element(by babel)which gives a JS object which is rendered as HTMl element
+
+babel creates Abstract tree(refer JS notes)
+
+attributes inside jsx are written in camel case

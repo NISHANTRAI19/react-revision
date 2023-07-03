@@ -16,3 +16,4 @@ https
 tree shaking - remove unused code
 different dev and prod bundles(npx parcel build {entry point})
 
+in SCRIPTS in package.json npm start=npm run start = parcel index.html
