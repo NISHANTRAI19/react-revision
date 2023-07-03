@@ -1,0 +1,19 @@
+what is JSX?
+
+JSX is a html like syntax extension of JS
+it is neither a string nor HTMl
+it produces react elements
+
+----------------------------------------
+what is the role type attribute in script element
+it indicates the type of script represented by the element
+we use module to define it is ES6 module
+the processing is deferred by default
+-------------------------------------------
+
+{TitleComponent()} vs {<TitleComponent/>} vs {<TitleComponent></TitleComponent>}
+
+
+{TitleComponent()} works as a normal js funciton call
+
+ rest works as calling the components 
