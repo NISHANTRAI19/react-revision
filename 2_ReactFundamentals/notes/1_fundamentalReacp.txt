@@ -28,3 +28,13 @@ JSX is converted to react element(by babel)which gives a JS object which is rend
 babel creates Abstract tree(refer JS notes)
 
 attributes inside jsx are written in camel case
+
+-----------------------------------------------------------
+
+React component 
+class based component -old
+functional component -new way
+functional component is a function that returns jsx code
+
+
+component composition is a component inside a component
