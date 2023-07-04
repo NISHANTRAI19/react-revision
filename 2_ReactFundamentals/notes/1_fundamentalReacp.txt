@@ -45,3 +45,25 @@ jsx can have single top level element(parent) { just like a tree has only 1 root
 react fragments -> <React.Fragment></React.Fragment> will become one parent of the root it behaves 
 like an empty tags
 <></> react fragment by jsx
+
+
+-------------------------------------------------------
+
+Below topics are covered in food ordered repo
+
+Passing a prop to a component is like passing and argument to a function.
+Props are nothing but JS object  
+and while receiving props
+eg.
+
+<Header title="ABC" id=1>
+const header=(props)=>{
+}
+
+or
+
+destructuring on the fly
+const header=({title,id})=>{                                   
+
+}
+
