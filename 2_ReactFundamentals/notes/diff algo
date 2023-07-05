@@ -1,0 +1,6 @@
+ 2 virtual doms created by diff algo consumes memory? how is it faster then the code we write using normal HTML CSS Js?
+
+React makes it faster and having 2 virtual doms is not necessarily bad as it takes a very less memory. 
+like you can take useState example if the same thing is made using HTML and js we need to write loop statements 
+and it can take performance hit so it makes it slow compared to react. 
+and moreover js will only implement code but not necessarily updates UI but react does both at a time hence it is faster
